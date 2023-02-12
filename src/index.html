@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Martel:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-900">
+    <!--Banner-->
+    <div class="text-center text-white text-7xl font-geek flex justify-center items-center pt-12 max-sm:text-5xl">
+        <img class="w-24 h-24" id="bannerSun" src="image/sun.png">
+        <p class="" id="bannerStoormy">STOORMY</p>
+    </div>
+    <!--Button Celcius and Kelwin-->
+    <div class="w-full">
+        <div class="flex justify-end text-white pr-52 font-geek text-2xl max-xl:justify-center max-xl:pr-0 2xl:pr-80">
+            <button class="bg-[#545E76] w-20 h-8 rounded-l-md" id="celciusButton">°C</button>
+            <button class="bg-[#7E8CAF] w-20 h-8 rounded-r-md" id="farenheitButton">F</button>
+        </div>
+    </div>
+    <!--Unchanging Windows-->
+    <div class="flex md:space-x-4 px-52 pt-20 2xl:px-80 max-xl:px-5 max-md:flex-col">
+
+        <div class="bg-[#1F2E53] rounded-lg max-md:mb-32 max-md:mx-4 shadow-md">
+            <img src="image/cloud.png" class="w-5/10 h-auto mx-auto -mt-20" id="chicagoWeatherImage">
+            <p class="text-center text-4xl font-geek text-white">Chicago</p>
+            <p class="text-center text-6xl font-geek text-white border-b-4 border-[#7E8CAF] pb-8" id="chicagoTemp">24°C</p>
+            <div class="flex items-center pt-8">
+                <img src="image/hPa.png" class="w-1/4 pl-8">
+                <p class="font-geek text-3xl pl-2 text-white" id="chicagoPressure">1013 hPa</p>
+            </div>
+            <div class="flex items-center pt-8">
+                <img src="image/wind.png" class="w-1/4 pl-8">
+                <p class="font-geek text-3xl pl-2 text-white" id="chicagoWind">13 Km/h</p>
+            </div>
+            <div class="flex items-center justify-around pt-8 mr-0 pb-8">
+                <div class="flex items-center w-1/2 justify-center">
+                    <img src="image/max.png" class="w-1/4">
+                    <p class="font-geek text-3xl pl-2 text-white" id="chicagoMaxTemp">27°C</p>
+                </div>
+                <div class="flex items-center w-1/2 justify-center">
+                    <img src="image/min.png" class="w-1/4">
+                    <p class="font-geek text-3xl pl-2 text-white" id="chicagoMinTemp">27°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#1F2E53] rounded-lg max-md:mb-32 max-md:mx-4 shadow-md">
+            <img src="image/cloud.png" class="w-5/10 h-auto mx-auto -mt-20" id="rzeszowWeatherImage">
+            <p class="text-center text-4xl font-geek text-white">Rzeszów</p>
+            <p class="text-center text-6xl font-geek text-white border-b-4 border-[#7E8CAF] pb-8" id="rzeszowTemp">24°C</p>
+            <div class="flex items-center pt-8">
+                <img src="image/hPa.png" class="w-1/4 pl-8">
+                <p class="font-geek text-3xl pl-2 text-white" id="rzeszowPressure">1013 hPa</p>
+            </div>
+            <div class="flex items-center pt-8">
+                <img src="image/wind.png" class="w-1/4 pl-8">
+                <p class="font-geek text-3xl pl-2 text-white" id="rzeszowWind">13 Km/h</p>
+            </div>
+            <div class="flex items-center justify-around pt-8 mr-0 pb-8">
+                <div class="flex items-center w-1/2 justify-center">
+                    <img src="image/max.png" class="w-1/4">
+                    <p class="font-geek text-3xl pl-2 text-white" id="rzeszowMaxTemp">27°C</p>
+                </div>
+                <div class="flex items-center w-1/2 justify-center">
+                    <img src="image/min.png" class="w-1/4">
+                    <p class="font-geek text-3xl pl-2 text-white" id="rzeszowMinTemp">27°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#1F2E53] rounded-lg max-md:mb-32 max-md:mx-4 shadow-md">
+            <img src="image/cloud.png" class="w-5/10 h-auto mx-auto -mt-20" id="barcelonaWeatherImage">
+            <p class="text-center text-4xl font-geek text-white">Barcelona</p>
+            <p class="text-center text-6xl font-geek text-white border-b-4 border-[#7E8CAF] pb-8" id="barcelonaTemp">24°C</p>
+            <div class="flex items-center pt-8">
+                <img src="image/hPa.png" class="w-1/4 pl-8">
+                <p class="font-geek text-3xl pl-2 text-white" id="barcelonaPressure">1013 hPa</p>
+            </div>
+            <div class="flex items-center pt-8">
+                <img src="image/wind.png" class="w-1/4 pl-8">
+                <p class="font-geek text-3xl pl-2 text-white" id="barcelonaWind">13 Km/h</p>
+            </div>
+            <div class="flex items-center justify-around pt-8 mr-0 pb-8">
+                <div class="flex items-center w-1/2 justify-center">
+                    <img src="image/max.png" class="w-1/4">
+                    <p class="font-geek text-3xl pl-2 text-white" id="barcelonaMaxTemp">27°C</p>
+                </div>
+                <div class="flex items-center w-1/2 justify-center">
+                    <img src="image/min.png" class="w-1/4">
+                    <p class="font-geek text-3xl pl-2 text-white" id="barcelonaMinTemp">27°C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--New locations-->
+    <div class="w-full">
+        <div class="bg-[#1F2E53] mx-52 2xl:mx-80 max-xl:mx-5 mt-10 rounded-lg mb-5 shadow-lg max-sm:mx-9 max-sm:mt-0">
+            <div class="px-8 max-md:px-0 ">
+                <p class="font-geek text-4xl text-white pt-3 uppercase max-md:text-center">Choose your city</p>
+                <div class="max-md:mx-auto flex max-md:justify-center items-center">
+                    <input type="text" id="searchForm" placeholder="e.g. Chicago" class="w-1/3 h-12 mt-2 rounded-lg
+                    bg-[#5B6E9E] text-3xl font-geek placeholder-[#7E8CAF] outline-none text-white pl-4  max-md:w-2/3 shadow-lg">
+                    <div class="pl-2">
+                        <button class="h-12 w-12 bg-[#5B6E9E] mt-2 rounded-lg text-2xl text-[#7E8CAF] font-geek shadow-lg" id="addNewLocationButton">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 max-md:px-0 max-sm:grid-cols-1" id="firstValue">
+                <div class="bg-[#5B6E9E] rounded-lg mt-5 mb-5 shadow-lg mx-2">
+                    <img src="image/03d.png" class="px-3 pt-3">
+                    <p class="text-center text-4xl font-geek text-white">City name</p>
+                    <p class="text-center text-6xl font-geek mb-4 text-white">Temp</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
